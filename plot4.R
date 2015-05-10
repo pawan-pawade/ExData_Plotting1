@@ -24,8 +24,7 @@ pwr_data$timestamp = strptime(paste(pwr_data$Date, pwr_data$Time),
 #start Plotting
 
 png(filename = "plot4.png", 
-    width = 480, height = 480,
-    units = "px", bg = "transparent")
+    width = 480, height = 480)
 par(mfrow = c(2, 2))
 ## Top-left
 plot(pwr_data$timestamp, pwr_data$Global_active_power, 
